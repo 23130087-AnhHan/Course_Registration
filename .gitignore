@@ -1,0 +1,41 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Java
+*.class
+*.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.buildpath
+
+# VS Code
+.vscode/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Server / App servers (Tomcat, etc.)
+logs/
+*.war
+*.ear
+
+# Temporary files
+*.tmp
+*.swp
+/build/
