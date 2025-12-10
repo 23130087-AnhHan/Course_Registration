@@ -19,7 +19,9 @@ public class CourseClassScheduleDTO {
 
     // Danh sách TKB cho lớp này
     private List<ScheduleDetail> scheduleList;
-
+    private String teacherId;
+    public String getTeacherId() { return teacherId != null ? teacherId : teacherName; } // fallback dùng name nếu thiếu id
+    public void setTeacherId(String teacherId) { this.teacherId = teacherId; }
     // Getters/Setters
     public String getClassId() { return classId; }
     public void setClassId(String classId) { this.classId = classId; }
@@ -50,4 +52,6 @@ public class CourseClassScheduleDTO {
 
     public List<ScheduleDetail> getScheduleList() { return scheduleList; }
     public void setScheduleList(List<ScheduleDetail> scheduleList) { this.scheduleList = scheduleList; }
+
+
 }
